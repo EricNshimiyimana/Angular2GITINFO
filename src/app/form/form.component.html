@@ -1,0 +1,66 @@
+<form class="form-inline mt-5 text-center">
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="inputPassword2" class="sr-only">Password</label>
+        <input [(ngModel)]="search" type="text" class="form-control" name="inputPassword2"
+            placeholder="Enter User Name">
+    </div>
+    <button (click)="onSearch()" class="btn btn-primary mb-2">Search</button>
+</form>
+
+<div class="row mb-5">
+    <div class="col-md-6">
+        <h1>{{users.login}}</h1>
+        <img src="{{users.avatar_url}}" alt="">
+    </div>
+    <div class="col-md-6 mt-5">
+        <div class="table table-striped table-bordered">
+            <h3> {{users.name}}</h3>
+            <table class="table table-striped table-light">
+                <tbody>
+                    <tr>
+                        <th scope="row">Username:</th>
+                        <td> <a href="{{users.html_url}}" target="_blank">{{users.login}}</a></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Repositories:</th>
+                        <td>{{users.public_repos }}</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Followers:</th>
+                        <td>{{users.followers}}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Following</th>
+                        <td>{{users.following}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="card card-cascade mx-5">
+
+    <div class="card-body card-body-cascade text-center">
+
+        <div class="repos" *ngFor="let repo of repos">
+
+            <h5 class="card-title"><strong>Repository Name: {{repo.name}}</strong></h5>
+
+            <p class="indigo-text py-2"><strong>Description:</strong><br> {{repo.description}}</p>
+
+            <p class="indigo-text py-2"><strong>Language:</strong> {{repo.language}}</p>
+
+            <hr class="font-weight-bold mt-5">
+
+        </div>
+
+
+    </div>
+</div>
+<hr>
