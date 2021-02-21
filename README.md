@@ -19,7 +19,7 @@ There are no installation requirments needed with your web browser you can be ab
  In case you have any issue on this project feel free to reach out to me (nericmpc@gmail.com). Also feel free to make contribtion to the code.
 
  ## link 
-
+ https://ericnshimiyimana.github.io/Angular2GITINFO/
 
 ## LICENCE
 
