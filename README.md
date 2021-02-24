@@ -8,6 +8,7 @@ email:nericmpc@gmail.com
 This is an application which display user Github informations, where users may enter a GitHub username into a form, search it, and see names and descriptions of that person's public repositories.
 
 ## Setup/Installation Requirements
+
 There are no installation requirments needed with your web browser you can be abe to access the site.
 
 ## Technologies Used
